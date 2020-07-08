@@ -1,6 +1,6 @@
 # CentOS 7 + ShellInABox
 
-FROM andrefernandes/docker-centos7-base
+FROM q409640976/ssh
 
 MAINTAINER Andre Fernandes
 
@@ -15,7 +15,7 @@ RUN useradd -u 5001 -G users -m user && \
     sed -i '/pam_loginuid.so/c\#session    required     pam_loginuid.so' /etc/pam.d/login && \
     sed -i '/pam_loginuid.so/c\#session    required     pam_loginuid.so' /etc/pam.d/remote
 
-#USER user
+USER root
 
 EXPOSE 4200
 
