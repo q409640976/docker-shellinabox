@@ -8,6 +8,7 @@ WORKDIR /opt
 
 RUN yum install -y openssl sudo shellinabox --enablerepo=epel && \
     yum install -y passwd && \
+    mkdir /www && \
     yum clean all
 ENV USERPWD mysecret
 RUN useradd -u 5001 -G users -m user && \
