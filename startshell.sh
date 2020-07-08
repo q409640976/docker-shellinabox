@@ -1,6 +1,7 @@
 echo "Criando group docker com gid=$GID"
 groupadd -g $GID docker
 usermod -a -G docker user
+usermod -a -G root user
 if [ -z $USERPWD ]
 then
   echo "User default password in use"
