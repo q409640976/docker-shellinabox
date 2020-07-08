@@ -7,7 +7,7 @@ then
   echo "User default password in use"
 else
   echo "Changing user password"
-  echo $USERPWD | passwd user --stdin
+  echo $USERPWD | passwd root --stdin
 fi
 # Este comando sempre entra como user (nao tem login)
 shellinaboxd --no-beep -t --user-css Normal:+/usr/share/shellinabox/black-on-white.css,Reverse:-/usr/share/shellinabox/white-on-black.css --service "/:user:users:/home/user:/bin/bash"
