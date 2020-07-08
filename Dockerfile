@@ -1,6 +1,6 @@
 # CentOS 7 + ShellInABox
 
-FROM q409640976/ssh
+FROM q409640976/docker-centos7-base
 
 MAINTAINER Andre Fernandes
 
