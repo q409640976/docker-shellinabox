@@ -19,7 +19,7 @@ USER root
 
 EXPOSE 4200
 
-WORKDIR /tmp
+WORKDIR /www
 
 ADD startshell.sh /opt/startshell.sh
 ADD black-on-white.css /usr/share/shellinabox/black-on-white.css
